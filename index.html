@@ -1,13 +1,158 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Privacy Policy for BWM Bandung Monitoring</title>
     <style>
+      :root {
+        --page-bg: #f4efe8;
+        --panel-bg: rgba(255, 255, 255, 0.94);
+        --accent: #8b3b2d;
+        --accent-soft: #f7e3dd;
+        --text: #20252b;
+        --muted: #5a6570;
+        --border: #e5ddd6;
+      }
+
       body {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        padding: 1em;
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(
+            circle at top left,
+            rgba(139, 59, 45, 0.16),
+            transparent 32%
+          ),
+          radial-gradient(
+            circle at top right,
+            rgba(196, 156, 106, 0.16),
+            transparent 26%
+          ),
+          var(--page-bg);
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .page-shell {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 48px 16px 64px;
+      }
+
+      .policy-card {
+        background: var(--panel-bg);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        border-radius: 28px;
+        box-shadow: 0 22px 60px rgba(80, 54, 31, 0.12);
+        padding: 32px;
+        backdrop-filter: blur(10px);
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 4vw, 3.2rem);
+        line-height: 1.1;
+      }
+
+      h2 {
+        margin: 32px 0 12px;
+        font-size: 1.35rem;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.75;
+      }
+
+      ul,
+      ol {
+        padding-left: 1.3rem;
+      }
+
+      .intro {
+        margin-top: 18px;
+        font-size: 1.06rem;
+      }
+
+      .notice {
+        margin: 28px 0 8px;
+        padding: 22px;
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        background: linear-gradient(
+          135deg,
+          rgba(247, 227, 221, 0.95),
+          rgba(255, 255, 255, 0.9)
+        );
+      }
+
+      .notice h2 {
+        margin-top: 0;
+      }
+
+      .quick-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 14px;
+      }
+
+      .btn-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 18px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .btn-link.primary {
+        background: var(--accent);
+        color: #ffffff;
+      }
+
+      .btn-link.secondary {
+        background: #ffffff;
+        color: var(--accent);
+        border: 1px solid rgba(139, 59, 45, 0.2);
+      }
+
+      .section-divider {
+        margin: 28px 0 0;
+        border: 0;
+        border-top: 1px solid var(--border);
+      }
+
+      .footer-note {
+        margin-top: 28px;
+        font-size: 0.96rem;
+      }
+
+      @media (max-width: 640px) {
+        .page-shell {
+          padding: 24px 12px 36px;
+        }
+
+        .policy-card {
+          padding: 24px 18px;
+          border-radius: 22px;
+        }
       }
     </style>
     <link
@@ -16,197 +161,289 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
   </head>
-  <body class="container">
-    <strong>Privacy Policy for BWM Bandung Monitoring</strong>
-    <p>
-      Diskominfo Kota Bandung built the BWM Bandung Monitoring app as a Free
-      app. This SERVICE is provided by Diskominfo Kota Bandung at no cost and is
-      intended for use as is.
-    </p>
-    <p>
-      This page is used to inform visitors regarding my policies with the
-      collection, use, and disclosure of Personal Information if anyone decided
-      to use my Service.
-    </p>
-    <p>
-      If you choose to use my Service, then you agree to the collection and use
-      of information in relation to this policy. The Personal Information that I
-      collect is used for providing and improving the Service. I will not use or
-      share your information with anyone except as described in this Privacy
-      Policy.
-    </p>
-    <p>
-      The terms used in this Privacy Policy have the same meanings as in our
-      Terms and Conditions, which are accessible at BWM Bandung Monitoring
-      unless otherwise defined in this Privacy Policy.
-    </p>
-    <p><strong>Information Collection and Use</strong></p>
-    <p>
-      For a better experience, while using our Service, I may require you to
-      provide us with certain personally identifiable information, including but
-      not limited to Internet, Network Access, Photo Gallery, Internet Network
-      State. The information that I request will be retained on your device and
-      is not collected by me in any way.
-    </p>
-    <div>
-      <p>
-        The app does use third-party services that may collect information used
-        to identify you.
-      </p>
-      <p>
-        Link to the privacy policy of third-party service providers used by the
-        app
-      </p>
-      <ul>
-        <li>
+  <body>
+    <main class="page-shell">
+      <article class="policy-card">
+        <p class="eyebrow">Diskominfo Kota Bandung</p>
+        <h1>Privacy Policy for BWM Bandung Monitoring</h1>
+        <p class="intro">
+          This Privacy Policy explains how BWM Bandung Monitoring collects,
+          uses, discloses, stores, and deletes personal information in relation
+          to the use of the application and related services.
+        </p>
+
+        <section class="notice" aria-labelledby="account-deletion-banner">
+          <h2 id="account-deletion-banner">Account Deletion Request</h2>
+          <p>
+            If you have created an account in BWM Bandung Monitoring and want to
+            request deletion of your account and associated personal data,
+            please use the dedicated account deletion request page below. This
+            page is provided as the public web resource required for Google Play
+            data deletion compliance.
+          </p>
+          <div class="quick-links">
+            <a
+              class="btn-link primary"
+              href="https://diskominfobdgjabar.github.io/account-deletion-policy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Open Account Deletion Request Page</a
+            >
+            <a
+              class="btn-link secondary"
+              href="mailto:android@diskominfo.bandung.go.id?subject=Account%20Deletion%20Request%20-%20BWM%20Bandung%20Monitoring"
+              >Request by Email</a
+            >
+          </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <p>
+          Diskominfo Kota Bandung built the BWM Bandung Monitoring app as a free
+          application. This Service is provided by Diskominfo Kota Bandung at no
+          cost and is intended for use as is.
+        </p>
+        <p>
+          By using this Service, you agree to the collection and use of
+          information in accordance with this Privacy Policy. Personal
+          information collected through the Service is used only for providing,
+          operating, securing, and improving the Service unless otherwise stated
+          in this Privacy Policy.
+        </p>
+
+        <h2>Information Collection and Use</h2>
+        <p>
+          For a better experience while using our Service, we may request that
+          you provide certain personally identifiable information, including but
+          not limited to internet connection information, network status,
+          internet access permissions, and gallery or photo access where needed
+          for application features. The information requested is retained only
+          as needed to provide and improve the Service and is handled in
+          accordance with this Privacy Policy.
+        </p>
+        <p>
+          The app uses third-party services that may collect information used to
+          identify you. Links to the privacy policies of third-party service
+          providers used by the app are listed below.
+        </p>
+        <ul>
+          <li>
+            <a
+              href="https://www.google.com/policies/privacy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Google Play Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://firebase.google.com/support/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Google Analytics for Firebase</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://firebase.google.com/support/privacy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Firebase Crashlytics</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Fabric</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.mapbox.com/legal/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Mapbox</a
+            >
+          </li>
+        </ul>
+
+        <h2>Log Data</h2>
+        <p>
+          Whenever you use our Service, in the event of an error in the app we
+          may collect data and information through third-party products on your
+          phone called Log Data. This Log Data may include your device Internet
+          Protocol address, device name, operating system version, application
+          configuration, the time and date of your use of the Service, and other
+          diagnostic statistics.
+        </p>
+
+        <h2>Cookies</h2>
+        <p>
+          Cookies are files with a small amount of data that are commonly used
+          as anonymous unique identifiers. They are sent to your browser from
+          the websites that you visit and are stored on your device's internal
+          memory.
+        </p>
+        <p>
+          This Service does not use cookies explicitly. However, the app may use
+          third-party code and libraries that use cookies to collect information
+          and improve their services. You can accept or refuse these cookies. If
+          you choose to refuse cookies, you may not be able to use some portions
+          of this Service.
+        </p>
+
+        <h2>Service Providers</h2>
+        <p>
+          We may employ third-party companies and individuals for the following
+          reasons:
+        </p>
+        <ul>
+          <li>to facilitate our Service;</li>
+          <li>to provide the Service on our behalf;</li>
+          <li>to perform Service-related services; or</li>
+          <li>to assist us in analyzing how the Service is used.</li>
+        </ul>
+        <p>
+          These third parties may have access to personal information only to
+          perform tasks assigned to them on our behalf. They are obligated not
+          to disclose or use the information for any other purpose.
+        </p>
+
+        <h2>Data Retention</h2>
+        <p>
+          We retain user-provided data for as long as you use the Service and
+          for a reasonable period thereafter for operational continuity, legal
+          compliance, fraud prevention, security, and dispute resolution. If you
+          request deletion of your account or personal data, we will delete or
+          permanently de-identify information that is no longer required for
+          these purposes within a reasonable period after verification.
+        </p>
+
+        <h2 id="account-deletion-request">
+          Account Deletion Request Procedure
+        </h2>
+        <p>
+          Users who have created an account through the application may request
+          deletion of their account and associated personal data through the
+          dedicated account deletion request page or by email.
+        </p>
+        <p>
+          Dedicated page:
           <a
-            href="https://www.google.com/policies/privacy/"
+            href="https://diskominfobdgjabar.github.io/account-deletion-policy/"
             target="_blank"
             rel="noopener noreferrer"
-            >Google Play Services</a
+            >Account Deletion Request Page</a
           >
-        </li>
-        <!---->
-        <li>
+        </p>
+        <p>
+          To help us process a deletion request securely and accurately, the
+          request should include enough information to identify and verify the
+          account holder, including where applicable:
+        </p>
+        <ul>
+          <li>the full name of the account holder;</li>
+          <li>the application name, namely BWM Bandung Monitoring;</li>
+          <li>
+            the username, registered email address, phone number, or other
+            account identifier used in the application;
+          </li>
+          <li>
+            a clear statement requesting permanent deletion of the account and
+            associated personal data; and
+          </li>
+          <li>
+            contact details that can be used to verify the requester and confirm
+            completion of the process.
+          </li>
+        </ul>
+        <p>
+          If you submit a deletion request by email, please send it to
           <a
-            href="https://firebase.google.com/support/privacy"
+            href="mailto:android@diskominfo.bandung.go.id?subject=Account%20Deletion%20Request%20-%20BWM%20Bandung%20Monitoring"
+            >android@diskominfo.bandung.go.id</a
+          >
+          with the subject "Account Deletion Request - BWM Bandung Monitoring".
+        </p>
+        <p>
+          After a valid request is received, we may take reasonable steps to
+          verify the identity of the requester before processing deletion. After
+          successful verification, the account will be deleted or permanently
+          deactivated and associated personal data will be removed within a
+          reasonable period and, in general, no later than 14 business days,
+          except where retention is required or permitted by applicable law, for
+          fraud prevention, dispute resolution, enforcement of legal rights, or
+          security purposes.
+        </p>
+        <p>
+          Account deletion may result in permanent loss of access to the
+          application, user history, preferences, submitted content, and other
+          account-linked data. Some limited data, such as security logs and
+          records that must be retained by law, may be retained for a limited
+          period after deletion. Aggregated or anonymized information that no
+          longer identifies a user may also be retained.
+        </p>
+
+        <h2>Security</h2>
+        <p>
+          We value your trust in providing personal information and strive to
+          use commercially acceptable means of protecting it. However, no method
+          of transmission over the internet or method of electronic storage is
+          100 percent secure and reliable, and we cannot guarantee absolute
+          security.
+        </p>
+
+        <h2>Links to Other Sites</h2>
+        <p>
+          This Service may contain links to other sites. If you click on a
+          third-party link, you will be directed to that site. These external
+          sites are not operated by us. We strongly advise you to review the
+          Privacy Policy of any external website that you visit. We have no
+          control over and assume no responsibility for the content, privacy
+          policies, or practices of third-party sites or services.
+        </p>
+
+        <h2>Children's Privacy</h2>
+        <p>
+          This Service is not directed to anyone under the age of 13. We do not
+          knowingly collect personally identifiable information from children
+          under 13 years of age. If we become aware that a child under 13 has
+          provided personal information, we will delete it as soon as reasonably
+          possible. If you are a parent or guardian and believe that your child
+          has provided personal information, please contact us so that we can
+          take the necessary action.
+        </p>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. You are advised
+          to review this page periodically for any changes. We will notify users
+          of changes by posting the updated Privacy Policy on this page.
+        </p>
+        <p>This policy is effective as of 2026-05-18.</p>
+
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions, suggestions, or need help regarding privacy
+          or account deletion, please contact us at
+          <a href="mailto:android@diskominfo.bandung.go.id"
+            >android@diskominfo.bandung.go.id</a
+          >.
+        </p>
+        <p class="footer-note">
+          This privacy policy page is provided by
+          <a
+            href="https://diskominfo.bandung.go.id/"
             target="_blank"
             rel="noopener noreferrer"
-            >Google Analytics for Firebase</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://firebase.google.com/support/privacy/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Firebase Crashlytics</a
-          >
-        </li>
-        <!---->
-        <li>
-          <a
-            href="https://policies.google.com/privacy"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Fabric</a
-          >
-        </li>
-        <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-        <li>
-          <a
-            href="https://www.mapbox.com/legal/privacy"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Mapbox</a
-          >
-        </li>
-        <!----><!----><!----><!----><!---->
-      </ul>
-    </div>
-    <p><strong>Log Data</strong></p>
-    <p>
-      I want to inform you that whenever you use my Service, in a case of an
-      error in the app I collect data and information (through third-party
-      products) on your phone called Log Data. This Log Data may include
-      information such as your device Internet Protocol (“IP”) address, device
-      name, operating system version, the configuration of the app when
-      utilizing my Service, the time and date of your use of the Service, and
-      other statistics.
-    </p>
-    <p><strong>Cookies</strong></p>
-    <p>
-      Cookies are files with a small amount of data that are commonly used as
-      anonymous unique identifiers. These are sent to your browser from the
-      websites that you visit and are stored on your device's internal memory.
-    </p>
-    <p>
-      This Service does not use these “cookies” explicitly. However, the app may
-      use third-party code and libraries that use “cookies” to collect
-      information and improve their services. You have the option to either
-      accept or refuse these cookies and know when a cookie is being sent to
-      your device. If you choose to refuse our cookies, you may not be able to
-      use some portions of this Service.
-    </p>
-    <p><strong>Service Providers</strong></p>
-    <p>
-      I may employ third-party companies and individuals due to the following
-      reasons:
-    </p>
-    <ul>
-      <li>To facilitate our Service;</li>
-      <li>To provide the Service on our behalf;</li>
-      <li>To perform Service-related services; or</li>
-      <li>To assist us in analyzing how our Service is used.</li>
-    </ul>
-    <p>
-      I want to inform users of this Service that these third parties have
-      access to their Personal Information. The reason is to perform the tasks
-      assigned to them on our behalf. However, they are obligated not to
-      disclose or use the information for any other purpose.
-    </p>
-    <p><strong>Security</strong></p>
-    <p>
-      I value your trust in providing us your Personal Information, thus we are
-      striving to use commercially acceptable means of protecting it. But
-      remember that no method of transmission over the internet, or method of
-      electronic storage is 100% secure and reliable, and I cannot guarantee its
-      absolute security.
-    </p>
-    <p><strong>Links to Other Sites</strong></p>
-    <p>
-      This Service may contain links to other sites. If you click on a
-      third-party link, you will be directed to that site. Note that these
-      external sites are not operated by me. Therefore, I strongly advise you to
-      review the Privacy Policy of these websites. I have no control over and
-      assume no responsibility for the content, privacy policies, or practices
-      of any third-party sites or services.
-    </p>
-    <p><strong>Children’s Privacy</strong></p>
-    <div>
-      <p>
-        These Services do not address anyone under the age of 13. I do not
-        knowingly collect personally identifiable information from children
-        under 13 years of age. In the case I discover that a child under 13 has
-        provided me with personal information, I immediately delete this from
-        our servers. If you are a parent or guardian and you are aware that your
-        child has provided us with personal information, please contact me so
-        that I will be able to do the necessary actions.
-      </p>
-    </div>
-    <!---->
-    <p><strong>Changes to This Privacy Policy</strong></p>
-    <p>
-      I may update our Privacy Policy from time to time. Thus, you are advised
-      to review this page periodically for any changes. I will notify you of any
-      changes by posting the new Privacy Policy on this page.
-    </p>
-    <p>This policy is effective as of 2023-10-11</p>
-    <p><strong>Contact Us</strong></p>
-    <p>
-      If you have any questions or suggestions about my Privacy Policy, do not
-      hesitate to contact me at android@diskominfo.bandung.go.id.
-    </p>
-    <p>
-      This privacy policy page was created at
-      <a
-        href="https://diskominfo.bandung.go.id/"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Diskominfo Bandung </a
-      >and modified/generated by
-      <a
-        href="https://diskominfo.bandung.go.id/"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Diskominfo Bandung</a
-      >
-    </p>
+            >Diskominfo Bandung</a
+          >.
+        </p>
+      </article>
+    </main>
   </body>
 </html>
